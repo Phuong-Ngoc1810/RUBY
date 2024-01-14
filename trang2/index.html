@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Phần này là phần sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/San Pham Cuoi Khoa/trang1/">Trang chủ</a>
+        <a href="/San Pham Cuoi Khoa/trang2/">Túc Duyên</a>
+        <a href="/San Pham Cuoi Khoa/trang3/">Mộc Cầm</a>
+    </div>
+
+    <!-- Phần này là phần Navigation bar (Thanh điều hướng) -->
+    <div id="nav">
+        <div id="nav-left">
+            <ul>
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <li><a href="/San Pham Cuoi Khoa/trang1/"><i class="fa-brands fa-optin-monster"></i> RUBY</a></li>
+                <li><a href="/San Pham Cuoi Khoa/trang1/">Trang Chủ</a></li>
+                <li><a href="/San Pham Cuoi Khoa/trang2/">Túc Duyên</a></li>
+                <li><a href="/San Pham Cuoi Khoa/trang3/">Mộc Cầm</a></li>
+            
+            </ul>
+        </div>
+        
+        
+        <div id="nav-right">
+            <ul>
+                <li>
+                    <input type="text" class="searchbar" placeholder="Search for something..."><!-- Thanh tìm kiếm -->
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button><!-- Kính lúp -->
+                </li>
+                <li>
+                    <a href="San Pham Cuoi Khoa/Đang ky/index.html"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li onclick="xinchao()"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Phần này là phần bài đăng -->
+    <div id="post">
+        <ul class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li>Túc Duyên</li>
+          </ul>
+
+        <div class="container">
+            <div class="row">
+              <div id="col">
+                <h1>Túc Duyên</h1>
+                <p> BST "Túc Duyên" mang đến vẻ duyên dáng và nét lôi cuốn cho mỗi cô gái thông qua sự kết hợp tinh tế của màu sắc với các chi tiết thủ công. Mỗi họa tiết và bố cục đều được vẽ tay hoàn toàn  trên nền chất liệu cao cấp mềm mại, ánh chỉ thêu óng ả và đính kết tỉ mỉ, ở đó không chỉ đẹp mắt mà mỗi thiết kế còn mang trong mình ý nghĩa sâu sắc về tình yêu và sự gắn kết.
+                </p>
+              </div>
+              <div id="col-1">
+                <div class="card card1">
+                  <h5></h5>
+                  <p></p>
+                </div>
+        
+                <div class="card card2">
+                  <h5></h5>
+                  <p></p>
+                </div>
+        
+                <div class="card card3">
+                  <h5></h5>
+                  <p></p>
+                </div>
+        
+                <div class="card card4">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+    </div>
+
+    <div id="product">
+        <h1 id="titlepr">Tất cả sản phẩm</h1>
+        <div id="pr">
+            <div id="pro-1">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen1.jpg" alt="" id="img-1">
+                    <h3 class="name">Áo dài Uyên Nhã</h3>
+                </div>
+            </div>
+
+            <div id="pro-2">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen2.jpg" alt="" id="img-2">
+                    <h3 class="name">Áo dài Uyên Đào</h3>
+                </div>
+            </div>
+
+            <div id="pro-3">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen3.webp" alt="" id="img-3">
+                    <h3 class="name">Áo dài Uyên Cúc</h3>
+                </div>
+            </div>
+
+            <div id="pro-4">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen4.jpg" alt="" id="img-4">
+                    <h3 class="name">Áo dài Uyên Lan</h3>
+                </div>
+            </div>
+
+            <div id="pro-5">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen5.jpg" alt="" id="img-5">
+                    <h3 class="name">Áo dài Uyên Liên</h3>
+                </div>
+            </div>
+
+            <div id="pro-6">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen6.jpg" alt="" id="img-6">
+                    <h3 class="name">Áo dài Uyên Mai</h3>
+                </div>
+            </div>
+
+            <div id="pro-7">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen7.jpg" alt="" id="img-7">
+                    <h3 class="name">Áo dài Uyên Khuê</h3>
+                </div>
+            </div>
+
+            <div id="pro-8">
+                <div class="pro">
+                    <img src="/San Pham Cuoi Khoa/image/tucduyen8.jpg" alt="" id="img-8">
+                    <h3 class="name">Áo dài Uyên Đài</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- day la phan footer -->
+    <div id="foo">
+        <div id="foo-left">
+            <h1 id="our-shopping"><a href="#"></a><i class="fa-brands fa-optin-monster"></i> RUBY </h1>
+            <h2 id="foo-left-title">Thông tin liên hệ</h2>
+            <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: C/c Số 1 Nghĩa Phát Phường 6 Quận Tân Bình </p>
+            <p><i class="fa-solid fa-phone"></i> Số điện thoại: 0896475918</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: tonguyenphuongngoc2008@gmail.com</p>
+
+        </div>
+
+        <div id="foo-center">
+            <h2 id="foo-center-title">Đăng ký</h2>
+        <form action="#">
+            <input type="text" placeholder="Name...">
+            <input type="email" placeholder="Email...">
+            <input type="phone" placeholder="Phone...">
+            <button type="submit" id="send">Send!</button>
+        </form>
+        </div>
+
+        
+    </div>
+    
+
+    <div id="back-to-top">&#9650;</div>
+    <script>
+        // Back to top functionality
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("back-to-top").style.display = "block";
+          } else {
+            document.getElementById("back-to-top").style.display = "none";
+          }
+        }
+    
+        document.getElementById("back-to-top").addEventListener("click", function() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        });
+      </script>
+
+
+
+    <script> 
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+<script src="/San Pham Cuoi Khoa/trang2/main2.js"></script>
+
+</body>
+</html>
