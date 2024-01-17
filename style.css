@@ -1,304 +1,142 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    background-color: rgba(249,238,229,255);
     box-sizing: border-box;
-
 }
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(249,238,229,255);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-  }
-  
-  .sidebar a:hover {
-    color: rgb(101,121,61);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  
-  
 
-#hero{
-    width: 100%;
-    height: 100%;
+body{
     display: flex;
-    
-}
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../image/tet3.png);
+    /* background-color: red; */
 
-#nav{
-    width: 100%;
-    height: 80px;
-    display: flex; /* làm thg 2 nằm trên cùng 1 hg vs 1 */
-    justify-content: space-between;
-    /* position: sticky;
-    top: 0; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
-#nav ul{
-    margin: 10px;
-    padding: 0;
+section{
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
     display: flex;
     justify-content: center;
-    align-items: center;  /* canh theo chiều dọc */
+    align-items: center;
+    padding: 32px 40px;
 }
-#nav ul li{
-    list-style: none;   /* làm mất dấu '.' của ul */
-    font-size: 33px;
-    margin: 10px;
-    font-weight: bold;  /* Độ đậm dày của chữ */
-    font-family: 'Raleway';
-}
-#nav ul li a{
-    text-decoration: none; /* làm mất dấu gạch chân của thẻ a */
-    color: #f5fbf1;
-}
-#nav ul li a:hover{
-    color: rgb(101,121,61);
-}
-#nav ul li a i:hover{
-    color: rgb(101,121,61);
-}
-#nav-right li input{
-    height: 25px;
-    width: 230px;
-    border-radius: 5px;
-}
-.search-btn{
-    height: 31px;
-    width: 40px;
-    margin-left: -5px;
-    border-radius: 5px;
-}
-
-#background-clip{
-    width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    
-}
-#post-area{
-    margin-top: 634px;
-}
-.post{
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    /* cai nay lam cho post di vao giua */
-    margin: 2% auto;
-}
-
-.post-img, .post-content{
- width: 40%;
-}
-.post-img img{
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-}
-.post-img img:hover{
-    opacity: 1;
-}
-.post-content{
-    margin-top: 98px ;
-    border-radius: 24px;
-    padding: 20px;
-}
-.post-content h2{
-    font-family:'Raleway';
-    font-size: 32px;
-    color: #F25C5C;
-}
-
-.view-more {
-    background-color: transparent;
-    padding: 15px 35px;
-    font-size: 13px;
-    border: rgb(101,121,61) 1px solid;
-    color:rgb(101,121,61);
-}
-.view-more:hover{
-    background-color: rgb(101,121,61);
-    color: rgba(245,224,205,255);
-}
-
-.slide{
-    width: 100%;
-    height: 100%;
-}
-
-#foo{
-        height: 450px;
-        width: 100%;
-        background-color: rgb(101,121,61) ;
-        display: flex; /* làm thg 2 nằm trên cùng 1 hg vs 1 */
-        justify-content: space-around; 
-        color: rgba(245,224,205,255);
-        font-family: 'Raleway';
-        font-weight: bold;
-}
-#foo-left h2, #foo-center h2{
-    font-family: 'Saira Condensed';
-    font-weight: bolder;
-    font-size: 27px;
-}
-#foo-left p{
-    font-family: 'Saira Condensed';
-    font-weight: 300;
-    font-size: 20px;
-}
-
-#foo-left{
-    margin: 50px -160px;
- 
-}
-#our-shopping{
-    font-weight: bold;
-}
-
-
-#foo-center{
-    margin:110px -160px;
-    
-    
-}
-#foo-center form{
-    margin-top: 12px;
-}
-
-#foo-center form input{
-    width: 400px;
-    height: 15px;
-    padding: 10px;
-    font-family: 'Saira Condensed';
-    font-weight: 300;
-    font-size: 18px;
-    display: block;
-    margin: 5px auto 5px;
-    border: none;
-    border-radius: 5px;
-}
-
-#send{
-    background-color: rgb(101,121,61);
-    color: rgba(245,224,205,255);
-    border:  rgba(245,224,205,255) 1px solid;
-    padding: 15px 35px;
-    font-size: 13px;
-}
-#send:hover{
-    background-color:rgba(245,224,205,255) ;
-    border: rgb(101,121,61) 1px solid;
-    color:rgb(101,121,61);
-}
-#ex-bst{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Raleway';
-    font-weight: bold;
-    color:#f5fbf1;
-    margin: 30px auto;
-    padding: 5px;
-    font-size: 50px;
-    background-color: rgb(101,121,61);
-    width: 500px;
-    border-radius: 5px;
-}
-#exam{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 240px;
-
-
-}
-#ex{
-    border-radius: 50%;
-    height: 70%;
-    width: 50%;
-    margin: 20px;
-    opacity: 0.9;
-    transition: width 2s, height 2s;
-}
-
-
-#ex:hover {
-    width: 60%;
-    height: 80%;
-    opacity: 1;
-}
-
-  #text {
-    font-size: 20px;
-    position: absolute;
-    margin: 135px 195px;
-    padding: 30px;
-  }
-  #text a{
-    text-decoration: none;
-    margin: -50px -112px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bolder;
-    font-size: 19px;
-  }
-
-  
-
-  #back-to-top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    cursor: pointer; /* để hiện con chuột */
-    background-color: #555;
+h1{
+    font-size: 2rem;
     color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    text-align: center;
+}
+.input-control{
+    width: 250px;
+    height: 28px;
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+    border: 2px solid black;
+}
+
+.input-control label{
+    margin-top: 2px;
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    margin-left: 3px;
+}
+
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -12px;
+}
+.input-control ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    top: 20px;
+}
+.input-control input:focus{
+    outline: 0;
+}
+.input-control.success input{
+    background-color: #E8F0FE;
+    border-color: green;
+    padding: 5px ;
+}
+.input-control.error input{
+    border-color: red;
+    padding: 5px ;
+    background-color: #E8F0FE;
+
+}
+.input-control .error{
+    color: black;
+    font-size: 10px;
 }
 
 
 
 
+input{
+    width: 250px;
+    height: 28px;
+    background-color: transparent;
+    border: 1px solid transparent;
+
+}
+.forget{
+    margin: 10px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.forget label{
+    display: flex;
+    align-items: center;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget a{
+    color: black;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.forget a:hover{
+    color:  rgb(3, 3, 90);
+}
+#signin{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+#signin:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+#signin a{
+    text-decoration: none;
+    color: black;
+}
+#signin a:hover{
+    text-decoration: underline;
+}
